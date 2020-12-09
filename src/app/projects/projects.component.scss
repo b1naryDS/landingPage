@@ -1,6 +1,11 @@
 .projects-container {
-  height: 150px;
-  width: 100%;
+  height: 300px;
+  margin: 0 auto;
+  width: 60%;
   display: flex;
+  justify-content: center;
   //flex-direction: row;
+}
+.projects-item {
+  margin: 10px;
 }

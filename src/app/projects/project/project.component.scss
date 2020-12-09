@@ -1,0 +1,14 @@
+.project {
+  height: 300px;
+  width: 200px;
+  border: black 1px solid;
+  border-radius: 5px;
+  background-image: url('./img/project-test.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  filter: grayscale(100%);
+}
+.project:hover {
+  filter: grayscale(0%);
+
+}
