@@ -10,7 +10,9 @@ import {Component, Input, OnInit} from '@angular/core';
 export class ProjectComponent implements OnInit {
 
   @Input() name: string = '';
+
   @Input() link: string = '';
+
   @Input() img: string = '';
 
   constructor() { }
