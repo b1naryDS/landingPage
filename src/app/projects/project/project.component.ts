@@ -1,3 +1,5 @@
+// input type inffered tslint warning fix
+/* tslint:disable:no-inferrable-types */
 import {Component, Input, OnInit} from '@angular/core';
 
 @Component({

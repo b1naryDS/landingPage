@@ -1,4 +1,10 @@
 <div class="projects-container">
+
   <app-project class="projects-item"
-    *ngFor="let project of projectList"></app-project>
+               *ngFor="let project of projectList$ | async"
+               [name]="project.name"
+               [link]="project.link"
+               [img]="project.img">
+  </app-project>
+
 </div>

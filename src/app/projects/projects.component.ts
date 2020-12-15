@@ -1,4 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import {ProjectsService} from './projects.service';
+import {Project} from './projects.models';
+import {Observable} from 'rxjs';
+import {tap} from 'rxjs/operators';
 
 @Component({
   selector: 'app-projects',
@@ -7,21 +11,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProjectsComponent implements OnInit {
 
-  // TODO: dohvatiti podatke, akitajs
-  projectList: Project[] = [
-    {name: 'prvi', link: 'github.prvi', img: 'ruta/do/slike1'},
-    {name: 'drugi', link: 'github.drugi', img: 'ruta/do/slike2'},
-  ];
+  // TODO: akitajs
+  projectList$: Observable<Project[]> = this.projectsService.getProjects();
 
-  constructor() { }
+  constructor(
+    private projectsService: ProjectsService,
+  ) { }
 
   ngOnInit(): void {
   }
 
 }
 
-interface Project {
-  name: string;
-  link: string;
-  img: string;
-}
+
