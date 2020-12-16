@@ -1,5 +1,7 @@
 <div class="project">
   <h1>name {{name}}</h1>
-  <h3>link {{link}}</h3>
-  <h3>img {{img}}</h3>
+<!--  <a (click)="goTo(link)">link</a>-->
+  <a [href]="link" class="project__link-normal-text">Link to code</a>
+  <a [href]="link" class="project__link-normal-text project__link-to-app">Link to app</a>
+<!--  <h3>img {{img}}</h3>-->
 </div>

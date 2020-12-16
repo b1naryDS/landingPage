@@ -11,8 +11,8 @@ export class ProjectsService {
 
   getProjects(): Observable<Project[]> {
     return of([
-      {name: 'prvi', link: 'github.prvi', img: 'ruta/do/slike1'},
-      {name: 'drugi', link: 'github.drugi', img: 'ruta/do/slike2'},
+      {name: 'prvi', link: 'https://github.com/b1naryDS/landingPage', img: 'ruta/do/slike1'},
+      {name: 'drugi', link: 'https://github.com/b1naryDS/landingPage', img: 'ruta/do/slike2'},
     ]);
   }
 }

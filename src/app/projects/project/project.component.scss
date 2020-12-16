@@ -1,14 +1,63 @@
 .project {
-  height: 300px;
-  width: 200px;
-  border: black 1px solid;
-  border-radius: 5px;
-  background-image: url('./img/project-test.jpg');
+  height: 350px;
+  width: 250px;
+  border: #8f9875 4px solid;
+  color: #8f9875;
+  border-radius: 10px;
+  background-image: url('./img/spring-5131048_1920.jpg');
   background-repeat: no-repeat;
   background-size: 100% 100%;
   filter: grayscale(100%);
-}
-.project:hover {
-  filter: grayscale(0%);
+
+  &__link-normal-text {
+    text-decoration: none;
+    -webkit-text-stroke: 1px black;
+    border: none;
+    color: #8f9875;
+    font-size: 16px;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+  }
+
+  &__link-normal-text:hover {
+    text-decoration: none;
+    border: none;
+    color: #8f9875;
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+    font-size: 20px;
+    text-align: center;
+  }
+
+  &__link-to-app {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    bottom: 30px;
+  }
 
 }
+
+//.project::before {
+//  position: absolute;
+//  top: 0;
+//  left: 0;
+//  font-size: 200px;
+//  content: '';
+//  overflow: hidden;
+//  transition: 0.5s ease-in-out;
+//  //filter: grayscale(0%);
+//  border-bottom: 4px solid yellow;
+//}
+
+.project:hover {
+  filter: grayscale(0%);
+}
+
+

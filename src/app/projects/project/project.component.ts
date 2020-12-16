@@ -20,4 +20,8 @@ export class ProjectComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  goTo(link: string): void {
+    window.location.href = link;
+  }
+
 }
